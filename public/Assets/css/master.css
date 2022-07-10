@@ -31,6 +31,15 @@
     overflow: hidden;
 }
 
+.frame1-1 .icon-excel{
+    /* width: 95.46px; */
+    height: 60px;
+}
+
+.frame1-2 h5{
+    border-radius: 3px 3px 0 0;
+}
+
 .frame1-2 .bar-default{
     height: 12.253658294677734px;
     border-radius: 25px;
@@ -80,4 +89,84 @@
 
 .frame2 .box-foto img:nth-child(2):hover{
     cursor: pointer;
+}
+
+.frame-2 .search{
+    border-radius: 4px 4px 0 0;
+}
+
+.frame-2 .head-list-siswa p{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-text);
+}
+
+.head-list-siswa p:nth-child(1), .data-list-siswa p:nth-child(1){
+    width: 45px;
+    margin: 0;
+}
+.head-list-siswa p:nth-child(2), .img{
+    width: 65px;
+    padding-left: 8px;
+    margin: 0;
+}
+
+.head-list-siswa p:nth-child(4),
+.data-list-siswa p:nth-child(4){
+    width: 90px;
+    text-align: center;
+    margin: 0;
+}
+
+.head-list-siswa p:nth-child(5),
+.data-list-siswa p:nth-child(5),
+
+.head-list-siswa p:nth-child(6),
+.data-list-siswa p:nth-child(6),
+
+.head-list-siswa p:nth-child(7),
+.data-list-siswa p:nth-child(7),
+
+.head-list-siswa p:nth-child(8),
+.data-list-siswa p:nth-child(8),
+
+.head-list-siswa p:nth-child(9),
+.data-list-siswa p:nth-child(9),
+
+.head-list-siswa p:nth-child(10),
+.data-list-siswa p:nth-child(10),
+
+.head-list-siswa p:nth-child(11),
+.data-list-siswa p:nth-child(11){
+    width: 135px;
+    text-align: center;
+    margin: 0;
+}
+
+.data-list-siswa p:nth-child(11) img:hover{
+    cursor: pointer;
+}
+
+input[type=text]{
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: none;
+    width: 920px;
+}
+
+.form-control:focus {
+    box-shadow:none !important;
+    outline:0px !important;
+    border-color: var(--orange);
+}
+
+.form-check-input:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+
+.frame1-saw{
+    background: var(--radial-orange);
+    height: 120px;
+    border-radius: 4px;
 }

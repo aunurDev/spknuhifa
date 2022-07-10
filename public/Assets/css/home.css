@@ -216,7 +216,7 @@
     margin: 0;
 }
 
-input[type=text], input[type=password] {
+input[type=text]{
     border-radius: 20px;
     padding: 8px 16px;
     border: none;

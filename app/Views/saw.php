@@ -8,35 +8,26 @@
 <?= $this->section('content'); ?>
 <!-- wrapper -->
 <div class="wrapper d-flex flex-column">
-    <div class="frame1 d-flex flex-row justify-content-between align-items-center mb-4 p-4">
-        <div class="frame1-1 d-flex flex-row flex-fill mr-4">
-            <div class="d-flex flex-column justify-content-between flex-fill">
-                <div class="d-flex py-2">
-                    <img class="icon-excel" src="assets/img/icon-excel.png" alt="">
-                    <div class="ml-3 d-flex flex-fill bw10 px-4 justify-content-between align-items-center br4">
-                        <h5 class="mb-0">DOWNLOAD TEMPLATE DATA SISWA</h5>
-                        <button class="btn-orange">Download</button>
-                    </div>
-                </div>
-                <p class="pl-4 mt-4">Silahkan downloadn contoh format pengisian dan mengisi data.
-                    Mohon tidak merubah format cell excel dari template.</p>
-            </div>
+    <div class="frame1-saw d-flex flex-row justify-content-between align-items-end mb-4 p-4">
+        <div class="d-flex flex-column flex-fill align-items-center">
+            <h5>KELAS</h5>
+            <button class="btn-white flex-fill w-280">Kelas 10 <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
         </div>
-        <div class="frame1-2 d-flex flex-column flex-fill">
-            <h5 class="bg-warning p-3 fc-main fw-700">IMPORT FOTO SISWA</h5>
-            <div class="d-flex flex-row flex-fill align-items-center">
-                <button class="btn-orange w-25 mr-4">Import</button>
-                <div class="bar-default main-bg flex-fill">
-                    <div class="bar-progress"></div>
-                </div>
-            </div>
+        <div class="d-flex flex-column flex-fill align-items-center">
+            <h5>ROMBEL</h5>
+            <button class="btn-white flex-fill w-280">Semua <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
+        </div>
+        <div class="d-flex flex-column flex-fill align-items-center">
+            <button type="button" class="btn-excel d-flex flex-row justify-content-between align-items-center">Download excel <img src="assets/icon/excel.svg" alt=""></button>
+        </div>
+        <div class="d-flex flex-column flex-fill align-items-center">
+            <input style="width:550px;" type="text" class="form-control" id="userid" placeholder="Cari siswa">
         </div>
     </div>
 
     <div class="frame-2 d-flex flex-column flex-wrap bw10 br4">
         <div class="search d-flex flex-row align-items-center bg-warning py-3 px-4 ">
             <h5 class="fc-main fw-700 mr-5 mb-0">DATA SISWA DAN NILAI TIAP KRITERIA</h5>
-            <input type="text" class="form-control" id="userid" placeholder="Cari siswa">
         </div>
         <div class="d-flex flex-column px-4 py-3">
             <div class="head-list-siswa d-flex flex-row justify-content-between align-items-center pb-4">
@@ -60,11 +51,11 @@
                 <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
                 <p>10</p>
                 <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
                 <p>
                     <img class="mr-2" src="assets/icon/setting2.svg" alt="">
                     <img src="assets/icon/trash.svg" alt="">
@@ -78,11 +69,11 @@
                 <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
                 <p>10</p>
                 <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
                 <p>
                     <img class="mr-2" src="assets/icon/setting2.svg" alt="">
                     <img src="assets/icon/trash.svg" alt="">
@@ -96,11 +87,11 @@
                 <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
                 <p>10</p>
                 <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
                 <p>
                     <img class="mr-2" src="assets/icon/setting2.svg" alt="">
                     <img src="assets/icon/trash.svg" alt="">
@@ -114,11 +105,11 @@
                 <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
                 <p>10</p>
                 <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
                 <p>
                     <img class="mr-2" src="assets/icon/setting2.svg" alt="">
                     <img src="assets/icon/trash.svg" alt="">
@@ -132,11 +123,11 @@
                 <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
                 <p>10</p>
                 <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
                 <p>
                     <img class="mr-2" src="assets/icon/setting2.svg" alt="">
                     <img src="assets/icon/trash.svg" alt="">
@@ -150,11 +141,11 @@
                 <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
                 <p>10</p>
                 <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
                 <p>
                     <img class="mr-2" src="assets/icon/setting2.svg" alt="">
                     <img src="assets/icon/trash.svg" alt="">
@@ -168,11 +159,47 @@
                 <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
                 <p>10</p>
                 <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>
+                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
+                    <img src="assets/icon/trash.svg" alt="">
+                </p>
+            </div>
+            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
+                <p>1</p>
+                <div class="img">
+                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
+                </div>
+                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
+                <p>10</p>
+                <p>MM-XI-A</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>
+                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
+                    <img src="assets/icon/trash.svg" alt="">
+                </p>
+            </div>
+            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
+                <p>1</p>
+                <div class="img">
+                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
+                </div>
+                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
+                <p>10</p>
+                <p>MM-XI-A</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
+                <p>0,9583333333</p>
                 <p>
                     <img class="mr-2" src="assets/icon/setting2.svg" alt="">
                     <img src="assets/icon/trash.svg" alt="">
@@ -181,9 +208,6 @@
 
         </div>
     </div>
-
-
-
 
 
 

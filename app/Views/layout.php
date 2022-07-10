@@ -28,7 +28,7 @@
 
                 <a href="#" class="data-master mr-5 d-flex align-items-center"><img class="mr-2" src="assets/icon/master.svg" alt=""> Data Master</a>
 
-                <a href="#" class="mr-5 d-flex align-items-center"><img class="mr-2" src="assets/icon/saw.svg" alt=""> Perhitungan</a>
+                <a href="<?= base_url('saw') ?>" class="mr-5 d-flex align-items-center"><img class="mr-2" src="assets/icon/saw.svg" alt=""> Saw</a>
             </div>
             <div class="right-group d-flex">
                 <div class="item1 mr-4"><img class="adminpict mr-2" src="assets/img/profile-sm.png" alt=""> Mohamad Aunur Rosidin</div>

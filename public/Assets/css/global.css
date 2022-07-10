@@ -88,6 +88,12 @@
     .br2{
         border-radius: 2.5px;
     }
+    .br3{
+        border-radius: 3px;
+    }
+    .br4{
+        border-radius: 4px;
+    }
 
 
     /* width */
@@ -125,7 +131,7 @@
 .footer{
     background: var(--dark);
     height: 54px;
-    background: #e7e7e7;
+    background: #F0F1F4;
     width: 1920px;
     position: fixed;
     bottom: 0;

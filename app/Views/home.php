@@ -20,7 +20,6 @@
                     <h5>ROMBEL</h5>
                     <button class="btn-white flex-fill w-280">Semua <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
                 </div>
-
             </div>
         </div>
         <div class="frame1-2 flex-fill d-flex justify-content-between">
