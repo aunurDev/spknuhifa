@@ -1,0 +1,237 @@
+.frame1{
+    width: 1,478px;
+}
+
+.frame1-1{
+    height: 131px;
+    width: 722px;
+    border-radius: 4px;
+    background: var(--radial-orange);
+    background-repeat: no-repeat;
+    margin-right: 24px;
+    overflow: hidden;
+}
+
+.frame1-2{
+    height: 131px;
+    width: 722px;
+}
+
+.frame1-2 .item{
+    background: var(--radial-orange);
+    height: 131px;
+    border-radius: 4px;
+}
+
+.item h1{
+    font-weight: 700;
+    font-size: 48px;
+    color: #4B3502;
+}
+
+.item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0px;
+}
+
+.frame1-2 button{
+    border-style: solid;
+    border-width: .25em;
+    background: var(--radial-orange);
+}
+.frame1-2 button:hover{
+    background: radial-gradient(50% 50% at 50% 50%, #ecd08e 0%, #FAC138 100%);
+}
+
+.frame2-1, .frame2-2{
+    width: 732px;
+}
+
+.frame2-1-1{
+    height: 495px;
+    background: var(--bw10);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.frame2-2{
+    height: 1570px;
+    overflow-y: scroll;
+    border-radius: 4px;
+}
+
+.list-jenis-perhitungan .icon{
+    height: 20.13px;
+}
+
+.list-jenis-perhitungan p:nth-child(1), .head-jenis-perhitungan p:nth-child(1){
+    width: 50px;
+}
+
+.list-jenis-perhitungan p:nth-child(4), .head-jenis-perhitungan p:nth-child(4){
+    width: 139px;
+}
+.list-jenis-perhitungan p:nth-child(5), .head-jenis-perhitungan p:nth-child(5){
+    width: 135px;
+}
+
+.list-jenis-perhitungan .icon{
+    width: 132.87px;
+}
+
+.list-jenis-perhitungan img{
+    height: 36px;
+    width: 36px;
+}
+.list-jenis-perhitungan img:hover{
+    cursor: pointer;
+}
+
+.icon img{
+ width: 19.29px;
+}
+
+
+.head-jenis-perhitungan p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.head-jenis-perhitungan .icon{
+    width: 132.87px;
+}
+
+.frame2-1-1 h5{
+    line-height: 0;
+}
+
+.frame2-1-2 .prestasi-profile{
+    height: 332px;
+    width: 250px;
+    border-radius: 4px;
+    background: var(--radial-orange);
+}
+
+.prestasi-profile .frame-foto{
+    border-radius: 50%;
+    background: var(--radial-orange);
+    width: 91px;
+    height: 91px;
+    box-shadow: -6px 5px 10px rgba(208, 109, 1, 0.15);
+}
+
+.prestasi-profile img{
+    width: 91px;
+    height: auto;
+}
+
+.prestasi-profile p{
+    margin: 0;
+    color: var(--main-text);
+    width: 467px;
+}
+
+.prestasi-profile p:nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+.prestasi-profile p:nth-child(2){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.prestasi-profile p:nth-child(3){
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+.frame2-1-2 .prestasi-deskripsi{
+    height: 335px;
+    width: 467px;
+    border-radius: 4px;
+    background: white;
+    border: 3px solid var(--warning);
+    outline-offset: -5px;
+    overflow: hidden;
+}
+
+.prestasi-deskripsi .header{
+    height: 88px;
+    width: 467px;
+    border-radius: 0 0 24px 24px;
+}
+
+.header .head-info{
+    height: 51px;
+}
+
+.head-info p{
+    margin: 0;
+}
+
+.head-info p:nth-child(1){
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: var(--main-text);
+}
+
+.head-info p:nth-child(2){
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;    
+    color: var(--main-text);
+}
+
+.box-info-deskripsi{
+    width: 350px;
+    color: var(--main-text);
+    height: 230px;
+}
+
+.box-info-deskripsi-detail p:nth-child(1){
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    width: 120px;
+    margin: 0;
+}
+
+.box-info-deskripsi-detail p:nth-child(2){
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    margin: 0;
+}
+
+.box-info-icon img:hover{
+    cursor: pointer;
+}
+
+input[type=text], input[type=password] {
+    border-radius: 20px;
+    padding: 8px 16px;
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow:none !important;
+    outline:0px !important;
+    border-color: var(--orange);
+}
+
+.form-check-input:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}

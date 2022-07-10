@@ -1,0 +1,122 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+ }
+
+body{
+    font-family: 'Barlow' !important;
+    background: var(--radial-orange);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    /* width: 1089px; */
+}
+.wrap{
+    width:100%;
+    height: auto;
+}
+
+.text-login h1{
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 86px;
+    letter-spacing: 0.35em;
+    color: var(--coklat);
+}
+
+.text-login h3{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    color: var(--coklat);
+}
+
+.form-login{
+    width: 450px;
+    background-color: #fff;
+    padding: 72px 36px;
+    border-radius: 20px 0 0  20px;
+    height: 929px;
+    box-shadow: -20px 0px 100px rgba(250, 196, 66, 0.5);
+}
+
+.logo-text img{
+    width:180px;
+    height: 180px;
+}
+.logo-text h3{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+input[type=text], input[type=password] {
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+.form-control:focus {
+    box-shadow:none !important;
+    outline:0px !important;
+    border-color: var(--orange);
+}
+
+.form-check-input:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.copyright a:hover{
+    color: var(--orange4)
+}
+
+.gagal{
+    background-color: var(--colorblur);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    top: 0;
+    left: 0;
+}
+
+.card-alert{
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    width: 50%;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card-alert .head-alert{
+    background-color: var(--red);
+    color: #fff;
+    width: auto;
+    padding: 8px 16px;
+}
+
+.card-alert .icon-cross{
+    background-image: url(../assets/icon/cross.svg);
+    width: 25px;
+    height: 25px;
+}
+
+.card-alert .notif{
+    padding: 32px 16px;
+}
+
+.display-none{
+    display: none;
+}
+
+.display{
+    display: block;
+}

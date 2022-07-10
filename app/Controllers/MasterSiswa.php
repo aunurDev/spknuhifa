@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class MasterSiswa extends BaseController
 {
     public function index()
     {
-        return view('home');
+        echo "halo";
     }
 }

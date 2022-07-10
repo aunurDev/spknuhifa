@@ -35,15 +35,19 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Login::index');
+
+
+
+$routes->get('/home', 'Home::index');
 
 /*
- * --------------------------------------------------------------------
- * Additional Routing
- * --------------------------------------------------------------------
- *
- * There will often be times that you need additional routing and you
- * need it to be able to override any defaults in this file. Environment
+* --------------------------------------------------------------------
+* Additional Routing
+* --------------------------------------------------------------------
+*
+* There will often be times that you need additional routing and you
+* need it to be able to override any defaults in this file. Environment
  * based routes is one such time. require() additional route files here
  * to make that happen.
  *
