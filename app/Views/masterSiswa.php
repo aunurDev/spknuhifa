@@ -304,11 +304,11 @@
 
                 <div class="d-flex flex-column justify-content-around py-3 px-1">
                     <div class="head-jenis-ranking d-flex flex-row flex-fill justify-content-between mb-4">
-                        <p class="my-0 fw-600">No</p>
-                        <p class="my-0 fw-600">Foto</p>
-                        <p class="my-0 fw-600 flex-fill">Nama siswa</p>
-                        <p class="my-0 fw-600">Total poin</p>
-                        <p class="my-0 fw-600 icon">Pengaturan</p>
+                        <p class="my-0">No</p>
+                        <p class="my-0">Foto</p>
+                        <p class="my-0 flex-fill">Nama siswa</p>
+                        <p class="my-0">Total poin</p>
+                        <p class="my-0 icon">Pengaturan</p>
                     </div>
                     <!-- end head -->
 
@@ -373,7 +373,12 @@
             </div>
         </div>
     </div>
-    <div class="sp-home"></div>
+
+    <!-- footer -->
+    <div class="footer align-items-center d-flex justify-content-center main-bg">
+        <p class="my-0">2021 &copy; SMK NUHIFA develope by <a href="https://github.com/aunurDev">aunurDev</a></p>
+    </div>
+    <!-- /footer -->
 </div>
 <!-- end wrapper -->
 

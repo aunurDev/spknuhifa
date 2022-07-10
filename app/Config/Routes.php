@@ -40,6 +40,8 @@ $routes->get('/', 'Login::index');
 
 
 $routes->get('/home', 'Home::index');
+$routes->get('/masterFoto', 'Master::index');
+$routes->get('/masterSiswa', 'Master::masterSiswa');
 
 /*
 * --------------------------------------------------------------------

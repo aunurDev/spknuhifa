@@ -3,7 +3,7 @@
 }
 
 .frame1-1{
-    height: 131px;
+    height: 150px;
     width: 722px;
     border-radius: 4px;
     background: var(--radial-orange);
@@ -13,13 +13,13 @@
 }
 
 .frame1-2{
-    height: 131px;
+    height: 150px;
     width: 722px;
 }
 
 .frame1-2 .item{
     background: var(--radial-orange);
-    height: 131px;
+    height: 150px;
     border-radius: 4px;
 }
 
@@ -61,47 +61,48 @@
     border-radius: 4px;
 }
 
-.list-jenis-perhitungan .icon{
-    height: 20.13px;
-}
-
-.list-jenis-perhitungan p:nth-child(1), .head-jenis-perhitungan p:nth-child(1){
-    width: 50px;
-}
-
-.list-jenis-perhitungan p:nth-child(4), .head-jenis-perhitungan p:nth-child(4){
-    width: 139px;
-}
-.list-jenis-perhitungan p:nth-child(5), .head-jenis-perhitungan p:nth-child(5){
-    width: 135px;
-}
-
-.list-jenis-perhitungan .icon{
-    width: 132.87px;
-}
-
-.list-jenis-perhitungan img{
-    height: 36px;
-    width: 36px;
-}
-.list-jenis-perhitungan img:hover{
-    cursor: pointer;
-}
-
-.icon img{
- width: 19.29px;
-}
-
-
 .head-jenis-perhitungan p{
     font-size: 18px;
     font-weight: 600;
-    line-height: 22px;
     letter-spacing: 0em;
 }
 
-.head-jenis-perhitungan .icon{
-    width: 132.87px;
+.head-jenis-perhitungan p:nth-child(1), .list-jenis-perhitungan p:nth-child(1){ 
+    width: 55px;
+    margin-bottom: 0 !important;
+}
+.head-jenis-perhitungan p:nth-child(2), .list-jenis-perhitungan p:nth-child(2){ 
+    margin-bottom: 0 !important;
+}
+
+.head-jenis-perhitungan p:nth-child(3), .list-jenis-perhitungan p:nth-child(3){ 
+    width: 100px;
+    text-align:center;
+    margin-bottom: 0 !important;
+}
+.head-jenis-perhitungan p:nth-child(4), .list-jenis-perhitungan .icon{ 
+    width: 100px;
+    margin-bottom: 0 !important;
+}
+
+.head-jenis-ranking p:nth-child(2), .img{ 
+    width: 85px;
+    text-align: center;
+}
+
+.head-jenis-ranking p:nth-child(1), .list-jenis-ranking p:nth-child(1){ 
+    width: 70px;
+    text-align: center;
+}
+
+.head-jenis-ranking p:nth-child(4), .list-jenis-ranking p:nth-child(4){ 
+    width: 180px;
+    text-align: center;
+}
+
+.head-jenis-ranking p:nth-child(5), .list-jenis-ranking .icon{ 
+    width: 120px;
+    text-align: center;
 }
 
 .frame2-1-1 h5{
@@ -213,10 +214,6 @@
     font-weight: 500;
     letter-spacing: 0em;
     margin: 0;
-}
-
-.box-info-icon img:hover{
-    cursor: pointer;
 }
 
 input[type=text], input[type=password] {

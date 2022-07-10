@@ -19,6 +19,32 @@
     --bw10:rgba(255, 255, 255, 1);
 }
 
+/* font color */
+    .fc-main{
+        color: var(--main-text);
+    }
+
+/* font weight */
+    .fw-400{
+        font-weight: 400;
+    }
+    .fw-500{
+        font-weight: 500;
+    }
+    .fw-600{
+        font-weight: 600;
+    }
+    .fw-700{
+        font-weight: 700;
+    }
+    .fw-800{
+        font-weight: 800;
+    }
+    .fw-900{
+        font-weight: 900;
+    }
+
+
 /* color for ptototype */
     .bw1{
         background-color: var(--bw1);
@@ -55,6 +81,24 @@
         background: var(--radial-orange) ;
     }
 
+    /* border radius */
+    .br1{
+        border-radius: 1px;
+    }
+    .br2{
+        border-radius: 2.5px;
+    }
+
+
+    /* width */
+    .w-280{
+        width: 280px;
+    }
+
+    a{
+        text-decoration: none !important;
+    }
+
 .wrapper{
     width: 1486.6px;
     position: absolute;
@@ -76,6 +120,16 @@
     transform: translateX(-50%);
     padding: 30px 0 24px 0;
     color: var(--bw10);
+}
+
+.footer{
+    background: var(--dark);
+    height: 54px;
+    background: #e7e7e7;
+    width: 1920px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .navbarr-list a{
@@ -136,15 +190,16 @@
 .btn-white{
     border: none;
     padding: 8px 24px;
-    background-color: var(--main-bg);
-    color: white;
+    background-color: var(--bw10);
+    color: var(--main-text);
     border-radius: 50px;
     font-weight: 500;
 }
 
-.btn-white:hover{
-    background-color: white;
-    transition: ease .4s;
+.btn-white:active, .btn-white:hover, .btn-white:focus {
+    border: none !important;
+    outline:0px !important;
+    cursor: pointer;
 }
 
 .btn-excel{
@@ -161,7 +216,6 @@
 .btn-excel:active, .btn-excel:hover, .btn-excel:focus {
     border: none !important;
     outline:0px !important;
-    background: var(--main-bg);
     transition: all .3s;
     cursor: pointer;
 }
@@ -176,4 +230,31 @@ p{
 
 .icon img{
     cursor: pointer;
+}
+
+.drop-menu-master{
+    border-radius: 2.5px;
+    width: 150px;
+    padding: 30 10px;
+    top: 90px;
+    left: 26%;
+    background: var(--dark);
+    z-index: 1001;
+    box-shadow: 5px 5px 15px -10px rgba(32, 36, 45, 0.8);
+    display: none;
+}
+
+.drop-menu-master div a{
+    color: var(--bw10) !important;
+}
+
+.drop-menu-master div a:hover, .drop-menu-master div a:active, .drop-menu-master div a:focus{
+    cursor: pointer;
+}
+
+.sp-master{
+    height: 80px;
+}
+.sp-home{
+    height: 60px;
 }
