@@ -43,6 +43,7 @@ $routes->get('/home', 'Home::index');
 $routes->get('/masterFoto', 'Master::index');
 $routes->get('/masterSiswa', 'Master::masterSiswa');
 $routes->get('/saw', 'Saw::index');
+$routes->get('/hitung', 'Saw::hitung');
 
 /*
 * --------------------------------------------------------------------
