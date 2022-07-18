@@ -104,6 +104,15 @@
     .w-280{
         width: 280px;
     }
+    .w-200{
+        width: 200px !important;
+    }
+    .w-160{
+        width: 160px !important;
+    }
+    .w-80{
+        width: 80px !important;
+    }
 
     a{
         text-decoration: none !important;

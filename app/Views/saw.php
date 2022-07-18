@@ -57,7 +57,7 @@
         </div>
         <div class="d-flex flex-column flex-fill align-items-center">
             <h5>ROMBEL</h5>
-            <button class="btn-white flex-fill w-280">Semua <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
+            <button class="btn-white flex-fill w-280">MM-XI-A <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
         </div>
         <div class="d-flex flex-column flex-fill align-items-center">
             <button type="button" class="btn-excel d-flex flex-row justify-content-between align-items-center">Download excel <img src="assets/icon/excel.svg" alt=""></button>
@@ -116,10 +116,15 @@
             <div class="head-list-siswa d-flex flex-row justify-content-between align-items-center pb-4">
                 <p>No.</p>
                 <p>Foto</p>
-                <p class="flex-fill m-0">Nama siswa</p>
-                <p>Kelas</p>
-                <p>Rombel</p>
-                <p class="w-50">Preferensi</p>
+                <p class="w-200 m-0">Nama siswa</p>
+                <p class="w-80">Kelas</p>
+                <p class="w-80">Rombel</p>
+                <p class="w-160">Presensi</p>
+                <p class="w-160">Pelanggaran</p>
+                <p class="w-160">Pengetahuan</p>
+                <p class="w-160">Keterampilan</p>
+                <p class="w-160">Keaktifan</p>
+                <p class="w-160">Preferensi</p>
             </div>
             <?php $no = 1;
             foreach ($alterKrit as $row) : ?>
@@ -128,10 +133,15 @@
                     <div class="img">
                         <img style="border-radius:100px;" height="40px" class="my-0" src="assets/img/siswa/<?= $row['foto'] ?>" alt="">
                     </div>
-                    <p class="w-25 m-0"><?= $row['nama']; ?></p>
-                    <p><?= $row['kelas']; ?></p>
-                    <p><?= $row['rombel']; ?></p>
-                    <p class="w-50">
+                    <p class="w-200 m-0"><?= $row['nama']; ?></p>
+                    <p class="w-80"><?= $row['kelas']; ?></p>
+                    <p class="w-80"><?= $row['rombel']; ?></p>
+                    <p class="w-160"><?= (($row['nilai_presensi'] / $pembagi['c1']) * $normBobot['c1']); ?></p>
+                    <p class="w-160"><?= (($pembagi['c2'] / $row['nilai_pelanggaran']) * $normBobot['c2']); ?></p>
+                    <p class="w-160"><?= (($row['nilai_pengetahuan'] / $pembagi['c3']) * $normBobot['c3']); ?></p>
+                    <p class="w-160"><?= (($row['nilai_keterampilan'] / $pembagi['c4']) * $normBobot['c4']); ?></p>
+                    <p class="w-160"><?= (($row['nilai_keaktifan'] / $pembagi['c5']) * $normBobot['c5']); ?></p>
+                    <p class="w-160">
                         <?=
                         (($row['nilai_presensi'] / $pembagi['c1']) * $normBobot['c1']) +
                             (($pembagi['c2'] / $row['nilai_pelanggaran']) * $normBobot['c2']) +
