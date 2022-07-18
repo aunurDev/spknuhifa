@@ -6,6 +6,69 @@
 
 
 <?= $this->section('content'); ?>
+
+<!-- popup bobot -->
+<div id="popupMaster">
+    <div class="background-popup">
+    </div>
+    <div class="box-popup d-flex flex-column br4 bw10">
+        <h5 class="p-3 m-0 fc-10 popup-head bg-orange">Tambah perhitungan baru</h5>
+        <div class="box-form d-flex flex-column">
+            <form action="<?= base_url('home/inputmaster') ?>">
+                <div class="d-flex">
+                    <div class="form-std d-flex flex-column flex-fill mr-3">
+                        <p class="fw-500">Nama sistem pendukung keputusan</p>
+                        <input class="flex-fill" type="text" id="namaSpk" name="namaSpk" value=""><br>
+                    </div>
+                    <div class="form-select d-flex flex-column">
+                        <p class="fw-500">Aktifkan</p>
+                        <select id="mySelect">
+                            <option value="aktif">Aktif</option>
+                            <option value="nonaktif">Nonaktif</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-std d-flex justify-content-end">
+                    <!-- <a href="" id="btnBatal" class="btn-std mr-3">Batal</a> -->
+                    <input type="submit" value="Simpan">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /popup bobot -->
+
+<!-- popup master -->
+<div id="popupMaster">
+    <div class="background-popup">
+    </div>
+    <div class="box-popup d-flex flex-column br4 bw10">
+        <h5 class="p-3 m-0 fc-10 popup-head bg-orange">Tambah perhitungan baru</h5>
+        <div class="box-form d-flex flex-column">
+            <form action="<?= base_url('home/inputmaster') ?>">
+                <div class="d-flex">
+                    <div class="form-std d-flex flex-column flex-fill mr-3">
+                        <p class="fw-500">Nama sistem pendukung keputusan</p>
+                        <input class="flex-fill" type="text" id="namaSpk" name="namaSpk" value=""><br>
+                    </div>
+                    <div class="form-select d-flex flex-column">
+                        <p class="fw-500">Aktifkan</p>
+                        <select id="mySelect">
+                            <option value="aktif">Aktif</option>
+                            <option value="nonaktif">Nonaktif</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-std d-flex justify-content-end">
+                    <!-- <a href="" id="btnBatal" class="btn-std mr-3">Batal</a> -->
+                    <input type="submit" value="Simpan">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /popup master -->
+
 <!-- wrapper -->
 <div class="wrapper d-flex flex-column">
     <div class="frame1 d-flex flex-row justify-content-between  mb-4">
@@ -44,7 +107,7 @@
             <div class="frame2-1-1 d-flex flex-column mb-4">
                 <div class="header py-3 px-4 bg-warning d-flex flex-row justify-content-between align-items-center">
                     <h5 class="m-0">LIST PERHITUNGAN PERANGKINGAN</h5>
-                    <button type="button" class="btn-orange">Tambah perangkingan</button>
+                    <button id="tambahSpk" type="button" class="btn-orange">Tambah perangkingan</button>
                 </div>
 
                 <div class="d-flex flex-column p-4">

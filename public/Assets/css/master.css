@@ -163,7 +163,7 @@ input[type=text]{
     border-radius: 20px;
     padding: 8px 16px;
     border: none;
-    width: 920px;
+    width: 800px;
 }
 
 .form-control:focus {

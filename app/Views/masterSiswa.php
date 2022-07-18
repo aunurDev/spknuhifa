@@ -34,9 +34,10 @@
     </div>
 
     <div class="frame-2 d-flex flex-column flex-wrap bw10 br4">
-        <div class="search d-flex flex-row align-items-center bg-warning py-3 px-4 ">
+        <div class="search d-flex flex-row align-items-center justify-content-between bg-warning py-3 px-4 ">
             <h5 class="fc-main fw-700 mr-5 mb-0">DATA SISWA DAN NILAI TIAP KRITERIA</h5>
             <input type="text" class="form-control" id="userid" placeholder="Cari siswa">
+            <button class="btn-orange mr-4">Tambah data</button>
         </div>
         <div class="d-flex flex-column px-4 py-3">
             <div class="head-list-siswa d-flex flex-row justify-content-between align-items-center pb-4">
@@ -75,9 +76,6 @@
             <?php endforeach; ?>
         </div>
     </div>
-
-
-
 
 
 
