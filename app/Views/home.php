@@ -14,21 +14,21 @@
             <div class="d-flex flex-row justify-content-between p-2 flex-fill">
                 <div class="d-flex flex-column flex-fill align-items-center">
                     <h5>KELAS</h5>
-                    <button class="btn-white flex-fill w-280">Kelas 10 <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
+                    <button class="btn-white flex-fill w-280">Kelas 11 <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
                 </div>
                 <div class="d-flex flex-column flex-fill align-items-center">
                     <h5>ROMBEL</h5>
-                    <button class="btn-white flex-fill w-280">Semua <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
+                    <button class="btn-white flex-fill w-280">MM-XII-A <img class="ml-3" src="assets/icon/union.svg" alt="" srcset=""></button>
                 </div>
             </div>
         </div>
         <div class="frame1-2 flex-fill d-flex justify-content-between">
             <div class="item d-flex flex-fill flex-column align-items-center justify-content-between py-3 mr-4">
-                <h1>1000</h1>
+                <h1><?= $totalAlterKrit; ?></h1>
                 <p>Jumlah siswa</p>
             </div>
             <div class="item d-flex flex-fill flex-column align-items-center justify-content-between py-3 mr-4">
-                <h1>1000</h1>
+                <h1>1</h1>
                 <p>Jumlah rombel</p>
             </div>
             <button class="btn d-flex flex-fill flex-column align-items-center justify-content-between pb-3 pt-4">
@@ -54,42 +54,20 @@
                         <p>Aktif</p>
                         <p class="text-center">Pengaturan</p>
                     </div>
-                    <div class="list-jenis-perhitungan d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p>1</p>
-                        <p class="flex-fill">Nama Jenis Perangkingan</p>
-                        <p class="text-center">Nonaktif</p>
-                        <div class="icon d-flex flex-row justify-content-around align-items-center">
-                            <img src="assets/icon/setting2.svg" alt="">
-                            <img src="assets/icon/trash.svg" alt="">
+                    <!-- data master -->
+                    <?php $no = 1;
+                    foreach ($master as $row) : ?>
+                        <div class="list-jenis-perhitungan d-flex flex-row justify-content-between align-items-center mb-3">
+                            <p><?= $no++; ?></p>
+                            <p class="flex-fill"><?= $row['nama_spk']; ?></p>
+                            <p class="text-center"><?= $row['is_active']; ?></p>
+                            <div class="icon d-flex flex-row justify-content-around align-items-center">
+                                <img src="assets/icon/setting2.svg" alt="<?= $row['id_spk'] ?>">
+                                <img src="assets/icon/trash.svg" alt="<?= $row['id_spk'] ?>">
+                            </div>
                         </div>
-                    </div>
-                    <div class="list-jenis-perhitungan d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p>1</p>
-                        <p class="flex-fill">Nama Jenis Perangkingan</p>
-                        <p class="text-center">Nonaktif</p>
-                        <div class="icon d-flex flex-row justify-content-around align-items-center">
-                            <img src="assets/icon/setting2.svg" alt="">
-                            <img src="assets/icon/trash.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="list-jenis-perhitungan d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p>1</p>
-                        <p class="flex-fill">Nama Jenis Perangkingan</p>
-                        <p class="text-center">Nonaktif</p>
-                        <div class="icon d-flex flex-row justify-content-around align-items-center">
-                            <img src="assets/icon/setting2.svg" alt="">
-                            <img src="assets/icon/trash.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="list-jenis-perhitungan d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p>1</p>
-                        <p class="flex-fill">Nama Jenis Perangkingan</p>
-                        <p class="text-center">Nonaktif</p>
-                        <div class="icon d-flex flex-row justify-content-around align-items-center">
-                            <img src="assets/icon/setting2.svg" alt="">
-                            <img src="assets/icon/trash.svg" alt="">
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
+                    <!-- /data master -->
                 </div>
             </div>
 
@@ -161,7 +139,7 @@
             <!-- prestasi 2 -->
             <div class="frame2-1-2 d-flex flex-row justify-content-between mb-4">
                 <div class="prestasi-profile py-4 d-flex flex-column justify-content-between align-items-lg-center">
-                    <img class="mb-2" src="assets/img/prestasi1.png" alt="">
+                    <img class="mb-2" src="assets/img/prestasi2.png" alt="">
                     <div class="frame-foto">
                         <img src="assets/img/profile-lg.png" alt="">
                     </div>
@@ -226,7 +204,7 @@
             <!-- prestasi 3 -->
             <div class="frame2-1-2 d-flex flex-row justify-content-between mb-4">
                 <div class="prestasi-profile py-4 d-flex flex-column justify-content-between align-items-lg-center">
-                    <img class="mb-2" src="assets/img/prestasi1.png" alt="">
+                    <img class="mb-2" src="assets/img/prestasi3.png" alt="">
                     <div class="frame-foto">
                         <img src="assets/img/profile-lg.png" alt="">
                     </div>
@@ -311,61 +289,28 @@
                     </div>
                     <!-- end head -->
 
-                    <div class="list-jenis-ranking d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p class="my-0">1</p>
-                        <div class="img">
-                            <img class="my-0" src="assets/img/profile-sm.png" alt="">
+                    <?php $no = 1;
+                    foreach ($alterKrit as $row) : ?>
+                        <div class="list-jenis-ranking d-flex flex-row justify-content-between align-items-center mb-3">
+                            <p class="my-0"><?= $no++; ?></p>
+                            <div class="img">
+                                <img style="border-radius:100px;" height="40px" class="my-0" src="assets/img/siswa/<?= $row['foto'] ?>" alt="">
+                            </div>
+                            <p class="flex-fill ml-3 my-0"><?= $row['nama']; ?> </p>
+                            <p class="my-0">
+                                <?=
+                                (($row['nilai_presensi'] / $pembagi['c1']) * $normBobot['c1']) +
+                                    (($pembagi['c2'] / $row['nilai_pelanggaran']) * $normBobot['c2']) +
+                                    (($row['nilai_pengetahuan'] / $pembagi['c3']) * $normBobot['c3']) +
+                                    (($row['nilai_keterampilan'] / $pembagi['c4']) * $normBobot['c4']) +
+                                    (($row['nilai_keaktifan'] / $pembagi['c5']) * $normBobot['c5']);
+                                ?>
+                            </p>
+                            <div class="icon">
+                                <img class="my-0" src="assets/icon/setting2.svg" alt="">
+                            </div>
                         </div>
-                        <p class="flex-fill my-0">Mohammad Imamud Dinul </p>
-                        <p class="my-0">0,8378205128</p>
-                        <div class="icon">
-                            <img class="my-0" src="assets/icon/setting2.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="list-jenis-ranking d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p class="my-0">1</p>
-                        <div class="img">
-                            <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                        </div>
-                        <p class="flex-fill my-0">Mohammad Imamud Dinul </p>
-                        <p class="my-0">0,8378205128</p>
-                        <div class="icon">
-                            <img class="my-0" src="assets/icon/setting2.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="list-jenis-ranking d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p class="my-0">1</p>
-                        <div class="img">
-                            <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                        </div>
-                        <p class="flex-fill my-0">Mohammad Imamud Dinul </p>
-                        <p class="my-0">0,8378205128</p>
-                        <div class="icon">
-                            <img class="my-0" src="assets/icon/setting2.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="list-jenis-ranking d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p class="my-0">1</p>
-                        <div class="img">
-                            <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                        </div>
-                        <p class="flex-fill my-0">Mohammad Imamud Dinul </p>
-                        <p class="my-0">0,8378205128</p>
-                        <div class="icon">
-                            <img class="my-0" src="assets/icon/setting2.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="list-jenis-ranking d-flex flex-row justify-content-between align-items-center mb-3">
-                        <p class="my-0">1</p>
-                        <div class="img">
-                            <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                        </div>
-                        <p class="flex-fill my-0">Mohammad Imamud Dinul </p>
-                        <p class="my-0">0,8378205128</p>
-                        <div class="icon">
-                            <img class="my-0" src="assets/icon/setting2.svg" alt="">
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
 
                     <!-- end list ranking -->
                 </div>

@@ -59,7 +59,7 @@
 
 .frame2 .box-foto{
     width: 100px;
-    height: 133.01px;
+    height: 100.01px;
     border-radius: 3px;
     overflow: hidden;
     margin-right: 10px;
@@ -142,11 +142,15 @@
 .data-list-siswa p:nth-child(9),
 
 .head-list-siswa p:nth-child(10),
-.data-list-siswa p:nth-child(10),
+.data-list-siswa p:nth-child(10){
+    width: 153px;
+    text-align: center;
+    margin: 0;
+}
 
 .head-list-siswa p:nth-child(11),
 .data-list-siswa p:nth-child(11){
-    width: 135px;
+    width: 100px;
     text-align: center;
     margin: 0;
 }

@@ -52,133 +52,27 @@
                 <p>Keaktifan</p>
                 <p>Pengaturan</p>
             </div>
-            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
-                <p>1</p>
-                <div class="img">
-                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
+            <?php $no = 1;
+            foreach ($alterKrit as $row) : ?>
+                <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
+                    <p><?= $no++; ?></p>
+                    <div class="img">
+                        <img style="border-radius:100px;" height="40px" class="my-0" src="assets/img/siswa/<?= $row['foto'] ?>" alt="">
+                    </div>
+                    <p class="flex-fill m-0"><?= $row['nama']; ?></p>
+                    <p><?= $row['kelas']; ?></p>
+                    <p><?= $row['rombel']; ?></p>
+                    <p><?= $row['nilai_presensi']; ?></p>
+                    <p><?= $row['nilai_pelanggaran']; ?></p>
+                    <p><?= $row['nilai_pengetahuan']; ?></p>
+                    <p><?= $row['nilai_keterampilan']; ?></p>
+                    <p><?= $row['nilai_keaktifan']; ?></p>
+                    <p>
+                        <img class="mr-2" src="assets/icon/setting2.svg" alt="">
+                        <img src="assets/icon/trash.svg" alt="">
+                    </p>
                 </div>
-                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
-                <p>10</p>
-                <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>
-                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
-                    <img src="assets/icon/trash.svg" alt="">
-                </p>
-            </div>
-            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
-                <p>1</p>
-                <div class="img">
-                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                </div>
-                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
-                <p>10</p>
-                <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>
-                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
-                    <img src="assets/icon/trash.svg" alt="">
-                </p>
-            </div>
-            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
-                <p>1</p>
-                <div class="img">
-                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                </div>
-                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
-                <p>10</p>
-                <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>
-                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
-                    <img src="assets/icon/trash.svg" alt="">
-                </p>
-            </div>
-            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
-                <p>1</p>
-                <div class="img">
-                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                </div>
-                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
-                <p>10</p>
-                <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>
-                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
-                    <img src="assets/icon/trash.svg" alt="">
-                </p>
-            </div>
-            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
-                <p>1</p>
-                <div class="img">
-                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                </div>
-                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
-                <p>10</p>
-                <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>
-                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
-                    <img src="assets/icon/trash.svg" alt="">
-                </p>
-            </div>
-            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
-                <p>1</p>
-                <div class="img">
-                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                </div>
-                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
-                <p>10</p>
-                <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>
-                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
-                    <img src="assets/icon/trash.svg" alt="">
-                </p>
-            </div>
-            <div class="data-list-siswa d-flex flex-row justify-content-between align-items-center py-2">
-                <p>1</p>
-                <div class="img">
-                    <img class="my-0" src="assets/img/profile-sm.png" alt="">
-                </div>
-                <p class="flex-fill m-0">Mohamad Aunur Rosidin</p>
-                <p>10</p>
-                <p>MM-XI-A</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>0.96</p>
-                <p>
-                    <img class="mr-2" src="assets/icon/setting2.svg" alt="">
-                    <img src="assets/icon/trash.svg" alt="">
-                </p>
-            </div>
-
+            <?php endforeach; ?>
         </div>
     </div>
 

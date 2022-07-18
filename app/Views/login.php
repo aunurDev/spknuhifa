@@ -14,6 +14,9 @@
 
     <link rel="stylesheet" href="<?= base_url('assets/css/global.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/login.css') ?>">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
 
 <body id="gradient-bg position-relative">
@@ -45,29 +48,32 @@
                 <img src="assets/img/logo-smk-lg.png" alt="">
                 <h3 class="text-center mt-3">SMK NUHIFA</h3>
             </div>
-            <form action="/action_page.php" class="w-100 d-flex flex-column flex-fill justify-content-between">
+            <form action="/login" class="w-100 d-flex flex-column flex-fill justify-content-between">
                 <div class="form12 d-flex flex-column">
                     <div class="mb-3">
                         <label for="userid" class="form-label">User ID</label>
-                        <input type="text" class="form-control" id="userid" placeholder="Ketikkan user id">
+                        <input id="username" type="text" class="form-control" id="userid" placeholder="Ketikkan user id">
                     </div>
                     <div class="mb-3">
                         <label for="pass" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="pass" placeholder="Ketikkan password">
+                        <input id="password" type="password" class="form-control" id="pass" placeholder="Ketikkan password">
                     </div>
                     <div class="form-check mb-5">
-                        <input class="form-check-input" type="checkbox" value="" id="tetaplogin">
                         <label class="form-check-label" for="tetaplogin">
                             Biarkan saya tetap login
                         </label>
+                        <input class="form-check-input" type="checkbox" value="" id="tetaplogin">
                     </div>
                 </div>
-                <button type="button" class="btn-orange">Login</button>
+                <a href="<?= base_url('home') ?>" id="btnLogin" type="button" class="btn-orange">Login</a>
             </form>
             <p class="mt-5 copyright text-center">2022 &copy; SMK NUHIFA develop by <a href="#">aunurdev</a></p>
         </div>
     </div>
-    <script src="vendor/bootstrap-4.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="assets/js/global.js"></script>
 </body>
 
 </html>
